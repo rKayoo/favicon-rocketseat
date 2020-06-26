@@ -1,0 +1,99 @@
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.cursos {
+  height: 400px;
+  display: grid;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.curso {
+  background-color: rgb(0, 0, 0, 0.1);
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.curso h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.curso a {
+  color: purple;
+  padding: 12px;
+  background-color: yellow;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  margin: 15vh auto;
+  position: relative;
+}
+
+.close-modal span {
+  color: white; 
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.expand span {
+  color: white; 
+  position: absolute;
+  bottom: 18px;
+  right: 8px;
+  height: 10px;;
+  cursor: pointer;
+}
+
+/* === MODAL-ACTIVE === */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+/* === MODAL-MAXIMIZED  === */
+
+.modal.maximize {
+  position: static;
+  margin: 0;
+}
+

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: white;
+}
+
+
+body {
+  background-color: #282a36;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-bottom: 1px solid #333;
+}
+
+header div {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+header div a{
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header div a:hover {
+  color: #baafd6;
+  transition: color 200ms;
+}
