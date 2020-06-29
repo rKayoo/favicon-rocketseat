@@ -11,23 +11,14 @@
   <h1>Cursos da Rocketseat</h1>
 
   <section class="cursos">
-    <div class="curso" id="starter">
-      <img src="/assets/starter.svg" alt="">
-      <h4>5 módulos - Grátis</h4>
+    {% for course in items %}
+    <div class="curso" id="{{course.name}}">
+      <img src="/assets/{{course.name}}.svg" alt="">
+      <h4>{{course.description}}</h4>
       <a>Saiba mais</a>
     </div>
-
-    <div class="curso" id="launchbase">
-      <img src="/assets/launchbase.svg" alt="">
-      <h4>14 módulos - Pago</h4>
-      <a>Saiba mais</a>
-    </div>
-    
-    <div class="curso" id="gostack">
-      <img src="/assets/go-stack.svg" alt="">
-      <h4>14 módulos - Pago</h4>
-      <a>Saiba mais</a>
-    </div>
+    {% endfor %}
+  </section>
 
     <div class="modal-overlay">
       <div class="modal">
@@ -42,9 +33,8 @@
         <a class="expand">
           <span class="material-icons">aspect_ratio</span>
         </a>
-        
       </div>
     </div>
-  </section>
+  
   <script src="/scripts.js"></script>
 {% endblock %}

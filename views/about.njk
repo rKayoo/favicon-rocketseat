@@ -7,27 +7,23 @@
 
 {% block content %}
   <div id="about">
-    <img src="https://pbs.twimg.com/profile_images/1271517147349626881/Mf1UjRa0.jpg" alt="Rockeseat">
-    <h1>Rocketseat</h1>
-    <p>Focado em passar o melhor conteúdo online, além de ajudar muitos a conseguirem seu primeiro emprego como
-      desenvolvedor.</p>
+    <img src="{{about.avatar_url}}" alt="{{about.name}}">
+    <h1>{{about.name}}</h1>
+    <p>{{about.description}}</p>
   </div>
 
   <div id="tech">
     <h4>Principais tecnologias utilizadas pela empresa:</h4>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Node.js</li>
-      <li>React</li>
-      <li>React Native</li>
-      <li>SQL</li>
+      {% for tech in about.technologies %}
+      <li>{{tech}}</li>
+      {% endfor %}
     </ul>
   </div>
 
   <div id="links-footer">
-    <a href="https://github.com/Rocketseat" target="_blank">Github</a>
-    <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br" target="_blank">Instagram</a>
-    <a href="https://pt-br.facebook.com/rocketseat/" target="_blank">Facebook</a>
+    {% for link in about.links %}
+    <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+    {% endfor %}
   </div>
 {% endblock %} 

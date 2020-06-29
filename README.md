@@ -25,10 +25,10 @@ O projeto foi desenvolvido com as seguintes tecnologias
 
 ```bash
   # Clonar o repositório
-  $ git clone https://github.com/rKayoo/Launchbase-desafios-03
+  $ git clone https://github.com/rKayoo/launchbase-desafios-03
 
   # Entrar no diretório
-  $ cd Launchbase-desafios-03
+  $ cd launchbase-desafios-03
 
   # Instalar as dependências
   $ yarn install
