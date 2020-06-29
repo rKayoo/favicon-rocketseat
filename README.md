@@ -8,7 +8,7 @@ O projeto é um pequeno site com informaçōes sobre a Rocketseat.
 ---
 
 ## 📌 Objetivo
-Projeto está sendo desenvolvido nos desafios do **bootcamp Launchbase** da **Rockeatseat**. O grande objetivo destes desafios é praticar o que foi aprendido nas aulas (Ínico do frontend e backend). 
+Projeto está sendo desenvolvido nos desafios do **bootcamp Launchbase** da **Rockeatseat**. O grande objetivo destes desafios é praticar o que foi aprendido nas aulas (Início do frontend e backend). 
 
 ---
 
@@ -25,10 +25,10 @@ O projeto foi desenvolvido com as seguintes tecnologias
 
 ```bash
   # Clonar o repositório
-  $ git clone https://github.com/rKayoo/launchbase-desafios-03
+  $ git clone https://github.com/rKayoo/Launchbase-desafios-03
 
   # Entrar no diretório
-  $ cd launchbase-desafios-03
+  $ cd Launchbase-desafios-03
 
   # Instalar as dependências
   $ yarn install
